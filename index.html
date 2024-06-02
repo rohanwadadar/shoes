@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Product Card UI Design</title>
+</head>
+
+<body>
+    <h1 class="heading1">Top Cricket Shoes</h1>
+    <div class="card-container">
+        <div class="container">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="41WZUqObUOL._SR600_315_PIWhiteStrip_BottomLeft_0_35_PIStarRatingONE_BottomLeft_360_-6_SR600_315_SCLZZZZZZZ_FMpng_BG255_255_255-removebg-preview.png" alt="nike-air-shoe" style="width:130%">
+                </div>
+                <div class="contentBx">
+                    <h2>Nike Men's Domain 2</h2>
+                    <div class="size">
+                        <h3>Size :</h3>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color :</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <a href="shop.php">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="2.png" alt="nike-air-shoe" style="width:70%">
+                </div>
+                <div class="contentBx">
+                    <h2>Nike Men's Domain 2 White</h2>
+                    <div class="size">
+                        <h3>Size :</h3>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color :</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <a href="2.php">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="81feQ7af8EL._SY625_-removebg-preview.png" alt="nike-air-shoe">
+                </div>
+                <div class="contentBx">
+                    <h2>New Balance</h2>
+                    <div class="size">
+                        <h3>Size :</h3>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color :</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <a href="3.php">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="ascrp613y102-removebg-preview.png" alt="nike-air-shoe">
+                </div>
+                <div class="contentBx">
+                    <h2>Asics Shoes</h2>
+                    <div class="size">
+                        <h3>Size :</h3>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color :</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <a href="4.php">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,800,800i,900&display=swap');
+
+    :root {
+        --main-bg-color: #131313;
+        --main-text-color: #fff;
+        --card-bg-color: #232323;
+        --highlight-color: #1BBFE9;
+        --text-highlight: rebeccapurple;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: var(--main-bg-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+
+    .heading1 {
+        letter-spacing: 1.0px;
+        padding: 20px;
+        color: var(--text-highlight);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        background: linear-gradient(45deg, #9451c4, #d1cbdd);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 320px;
+        background: var(--card-bg-color);
+        border-radius: 20px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .container .card {
+        position: relative;
+        width: 320px;
+        height: 450px;
+        margin-left: 20px;
+        background: var(--card-bg-color);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .container .card:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--highlight-color);
+        clip-path: circle(150px at 80% 20%);
+        transition: 0.5s ease-in-out;
+    }
+
+    .container .card:hover:before {
+        clip-path: circle(300px at 80% -20%);
+    }
+
+    .container .card:after {
+        content: "Nike";
+        position: absolute;
+        top: 30%;
+        left: -20%;
+        font-size: 12em;
+        font-weight: 800;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.04);
+    }
+
+    .container .card .imgBx {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1000;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+    }
+    .container .card:hover .imgBx {
+   top: 0%;
+   transform: translateY(-25%);
+}
+
+.container .card .imgBx img {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) rotate(20deg);
+   width: 270px;
+}
+
+.container .card .contentBx {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 100px;
+   text-align: center;
+   transition: 1s;
+   z-index: 90;
+}
+
+.container .card:hover .contentBx {
+   height: 210px;
+}
+
+.container .card .contentBx h2 {
+   position: relative;
+   font-weight: 600;
+   letter-spacing: 1px;
+   color: var(--main-text-color);
+}
+
+.container .card .contentBx .size,
+.container .card .contentBx .color {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 8px 20px;
+   transition: 0.5s;
+   opacity: 0;
+   visibility: hidden;
+}
+
+.container .card:hover .contentBx .size {
+   opacity: 1;
+   visibility: visible;
+   transition-delay: 0.5s;
+}
+
+.container .card:hover .contentBx .color {
+   opacity: 1;
+   visibility: visible;
+   transition-delay: 0.6s;
+}
+
+.container .card .contentBx .size h3,
+.container .card .contentBx .color h3 {
+   color: var(--main-text-color);
+   font-weight: 300;
+   font-size: 14px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   margin-right: 10px;
+}
+
+.container .card .contentBx .size span {
+   width: 26px;
+   height: 26px;
+   text-align: center;
+   line-height: 26px;
+   font-size: 14px;
+   display: inline-block;
+   color: #111;
+   background: var(--main-text-color);
+   margin: 0 5px;
+   transition: 0.5s;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.container .card .contentBx .size span:hover {
+   background: #B90000;
+}
+
+.container .card .contentBx .color span {
+   width: 20px;
+   height: 20px;
+   background: #ff0;
+   border-radius: 50%;
+   margin: 0 5px;
+   cursor: pointer;
+}
+
+.container .card .contentBx .color span:nth-child(2) {
+   background: var(--highlight-color);
+}
+
+.container .card .contentBx .color span:nth-child(3) {
+   background: #1B2FE9;
+}
+
+.container .card .contentBx .color span:nth-child(4) {
+   background: #080481;
+}
+
+.container .card .contentBx a {
+   display: inline-block;
+   padding: 10px 20px;
+   background: var(--main-text-color);
+   border-radius: 4px;
+   margin-top: 10px;
+   text-decoration: none;
+   font-weight: 600;
+   color: #111;
+   opacity: 0;
+   transform: translateY(50px);
+   transition: 0.5s;
+}
+
+.container .card:hover .contentBx a {
+   opacity: 1;
+   transform: translateY(0px);
+   transition-delay: 0.7s;
+}
+
+.heading1 {
+   letter-spacing: 1.0px;
+   padding: 40px;
+   color: var(--text-highlight);
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+   background: linear-gradient(45deg, #9451c4, #d1cbdd);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   transition: all 0.3s ease;
+}
+
+.heading1:hover {
+   color: var(--text-highlight);
+   text-shadow: 4px 4px 10px rgba(26, 17, 36, 0.9);
+   transform: scale(1.05);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+   .heading1 {
+       font-size: 5em;
+       padding: 30px;
+   }
+}
+
+@media (max-width: 768px) {
+   .heading1 {
+       font-size: 4em;
+       padding: 20px;
+   }
+}
+
+@media (max-width: 480px) {
+   .heading1 {
+       font-size: 3em;
+       padding: 10px;
+   }
+}
+
+@media (min-width: 768px) {
+   .card-container {
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+
+   .card {
+       margin: 20px;
+   }
+}
+</style>
+
+<script>
+   // Add touch event handlers for Android devices
+   const cards = document.querySelectorAll('.card');
+
+   cards.forEach(card => {
+       card.addEventListener('touchstart', handleTouchStart);
+       card.addEventListener('touchend', handleTouchEnd);
+   });
+
+   function handleTouchStart(e) {
+       this.classList.add('hover');
+   }
+
+   function handleTouchEnd(e) {
+       this.classList.remove('hover');
+   }
+</script>
